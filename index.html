@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DolceDim — O pudim perfeito existe. Pudins artesanais lisinhos e sem furinhos, por Fernanda Braga. Sorocaba." />
+  <meta name="theme-color" content="#2C1810" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="DolceDim — O Pudim Perfeito Existe" />
+  <meta property="og:description" content="Pudins artesanais lisinhos, sem furinhos, por Fernanda Braga." />
+  <meta property="og:image"       content="images/pudim-calda.jpeg" />
+  <meta property="og:type"        content="website" />
+
+  <title>DolceDim — O Pudim Perfeito Existe</title>
+  <link rel="icon" type="image/jpeg" href="images/logo-selo.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════
+       CURSOR
+  ═══════════════════════════════ -->
+  <div class="cursor"      id="cursor"    ></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════
+       WHATSAPP FLUTUANTE
+  ═══════════════════════════════ -->
+  <a class="wpp-btn"
+     href="https://wa.me/5515976004473"
+     target="_blank"
+     rel="noopener"
+     aria-label="Fazer pedido pelo WhatsApp">
+    💬
+  </a>
+
+  <!-- ═══════════════════════════════
+       NAVBAR
+  ═══════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="images/logo-selo.jpeg" alt="DolceDim logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-brand">DolceDim</span>
+        <span class="nav-logo-tagline">Por Fernanda Braga</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre"      >A Marca</a></li>
+      <li><a href="#cardapio"   >Cardápio</a></li>
+      <li><a href="#fernanda"   >Fernanda</a></li>
+      <li><a href="#galeria"    >Galeria</a></li>
+      <li><a href="#depoimentos">Reviews</a></li>
+      <li><a href="#contato"    >Contato</a></li>
+      <li>
+        <a href="https://wa.me/5515976004473"
+           target="_blank" rel="noopener"
+           class="nav-cta">
+          Fazer Pedido
+        </a>
+      </li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div id="mobileNav" style="
+    position:fixed;inset:0;background:rgba(44,24,16,0.98);
+    z-index:780;display:none;flex-direction:column;
+    align-items:center;justify-content:center;gap:28px;
+  ">
+    <style>#mobileNav.open{display:flex!important;}</style>
+    <a href="#sobre"       style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">A Marca</a>
+    <a href="#cardapio"    style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">Cardápio</a>
+    <a href="#fernanda"    style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">Fernanda</a>
+    <a href="#galeria"     style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">Galeria</a>
+    <a href="#depoimentos" style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">Reviews</a>
+    <a href="#contato"     style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-style:italic;color:#F5EDD8;text-decoration:none;">Contato</a>
+    <a href="https://wa.me/5515976004473" target="_blank"
+       style="margin-top:10px;font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;background:#B8773A;color:#FDFAF4;padding:14px 40px;text-decoration:none;">
+      Fazer Pedido
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════
+       HERO
+  ═══════════════════════════════ -->
+  <section id="hero">
+    <!-- Lado esquerdo — texto -->
+    <div class="hero-left">
+      <!-- Ornamentos de fundo -->
+      <div class="caramel-drop"></div>
+      <div class="caramel-drop"></div>
+
+      <div class="hero-eyebrow">Pudins Artesanais </div>
+
+      <h1 class="hero-title">
+        O pudim<br>
+        <em>perfeito</em><br>
+        existe.
+      </h1>
+
+      <p class="hero-subtitle">Por Fernanda Braga</p>
+
+      <div class="hero-divider">
+        <span></span>
+        <em>Liso &middot; Sem furinhos &middot; Perfeito</em>
+        <span></span>
+      </div>
+
+      <p class="hero-desc">
+        Pudins artesanais com textura irretocável — lisinhos, sem bolhas,
+        sem furinhos. Uma experiência sensorial que começa na aparência
+        e se confirma em cada colherada.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="https://wa.me/5515976004473"
+           target="_blank" rel="noopener"
+           class="btn btn-dark">
+          Fazer Pedido
+        </a>
+        <a href="#cardapio" class="btn btn-outline">
+          Ver Cardápio
+        </a>
+      </div>
+    </div>
+
+    <!-- Lado direito — imagem hero -->
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <!--
+          Foto principal do hero: pudim sendo regado com calda, com flor
+        -->
+        <img src="images/pudim-calda.jpeg"
+             alt="Pudim DolceDim sendo regado com calda dourada"
+             loading="eager" />
+      </div>
+
+      <!-- Selo rotativo -->
+      <div class="hero-seal">
+        <img src="images/logo-selo.jpeg" alt="Selo DolceDim — O pudim perfeito existe" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FAIXA ANIMADA
+  ═══════════════════════════════ -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <span>DolceDim</span><span class="dot"> · </span>
+      <span>O pudim perfeito existe</span><span class="dot"> · </span>
+      <span>Liso &amp; sem furinhos</span><span class="dot"> · </span>
+      <span>Por Fernanda Braga</span><span class="dot"> · </span>
+      <span>Artesanal</span><span class="dot"> · </span>
+      <span>Sorocaba</span><span class="dot"> · </span>
+      <span>DolceDim</span><span class="dot"> · </span>
+      <span>O pudim perfeito existe</span><span class="dot"> · </span>
+      <span>Liso &amp; sem furinhos</span><span class="dot"> · </span>
+      <span>Por Fernanda Braga</span><span class="dot"> · </span>
+      <span>Artesanal</span><span class="dot"> · </span>
+      <span>Sorocaba</span><span class="dot"> · </span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════
+       SOBRE A MARCA
+  ═══════════════════════════════ -->
+  <section id="sobre">
+    <!-- Galeria de fotos -->
+    <div class="sobre-images reveal-left">
+      <div class="sobre-img">
+        <img src="images/pudim-tradicional.jpeg"
+             alt="Pudim Tradicional DolceDim"
+             loading="lazy" />
+        <div class="sobre-plaque">
+          <span>Pudim Tradicional</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.8rem;color:rgba(212,160,90,0.8);">sem furinhos, lisinho</span>
+        </div>
+      </div>
+      <div class="sobre-img">
+        <img src="images/pudim-chocolate-branco.jpeg"
+             alt="Pudim Chocolate Branco DolceDim"
+             loading="lazy" />
+      </div>
+      <div class="sobre-img">
+        <img src="images/embalagem.jpeg"
+             alt="Embalagem DolceDim"
+             loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Texto -->
+    <div class="sobre-text">
+      <div class="sec-eyebrow reveal">A Marca</div>
+      <h2 class="sec-title reveal">
+        Uma obsessão<br>
+        pela <em>perfeição.</em>
+      </h2>
+
+      <p class="sec-desc reveal" style="margin-top:20px;">
+        A DolceDim nasceu de uma insatisfação com pudins comuns — cheios de furinhos,
+        de bolhas, sem personalidade. Fernanda Braga decidiu que o pudim perfeito
+        não era um mito: era uma receita a ser descoberta.
+      </p>
+      <p class="sec-desc reveal">
+        Após meses de pesquisa e refinamento, surgiu o método DolceDim — que garante
+        uma superfície impecável, textura sedosa e sabor profundo em cada tamanho,
+        de 120g a 1kg.
+      </p>
+
+      <!-- Diferenciais -->
+      <div class="diferenciais reveal">
+        <div class="diferencial">
+          <span class="dif-icon">✨</span>
+          <div class="dif-title">Liso & sem furinhos</div>
+          <p class="dif-desc">Nossa marca registrada. Superfície perfeita, textura sem bolhas.</p>
+        </div>
+        <div class="diferencial">
+          <span class="dif-icon">🥛</span>
+          <div class="dif-title">Ingredientes selecionados</div>
+          <p class="dif-desc">Leite integral, ovos frescos e calda artesanal sem atalhos.</p>
+        </div>
+        <div class="diferencial">
+          <span class="dif-icon">🎁</span>
+          <div class="dif-title">Embalagem cuidadosa</div>
+          <p class="dif-desc">Entregamos como se fosse um presente — porque é.</p>
+        </div>
+        <div class="diferencial">
+          <span class="dif-icon">🍮</span>
+          <div class="dif-title">4 tamanhos disponíveis</div>
+          <p class="dif-desc">De 120g a 1kg para cada momento — solo ou em família.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       CARDÁPIO
+  ═══════════════════════════════ -->
+  <section id="cardapio">
+    <div class="cardapio-header">
+      <div class="sec-eyebrow reveal">Cardápio</div>
+      <h2 class="sec-title reveal">Nossos <em>sabores</em></h2>
+      <p class="reveal">
+        Cada receita foi desenvolvida com obsessão — para que cada tamanho,
+        cada sabor, seja simplesmente perfeito.
+      </p>
+    </div>
+
+    <!-- Abas de sabores -->
+    <div class="sabor-tabs reveal">
+      <button class="sabor-tab active" data-sabor="tradicional">
+        Pudim Tradicional
+      </button>
+      <button class="sabor-tab" data-sabor="chocbranco">
+        Chocolate Branco
+      </button>
+       <button class="sabor-tab" data-sabor="docelite">
+        Doce de Leite
+        <span class="em-breve">Em breve</span>
+      </button>
+      <button class="sabor-tab" data-sabor="geladinho">
+        Geladinhos
+        <span class="em-breve">Em breve</span>
+      </button>
+      <button class="sabor-tab" data-sabor="belgico">
+        Chocolate Belga
+        <span class="em-breve">Em breve</span>
+      </button>
+    </div>
+
+    <!-- ─── PAINEL: TRADICIONAL ─── -->
+    <div class="sabor-panel active" id="sabor-tradicional">
+      <div class="sabor-hero-card">
+        <div class="sabor-hero-img">
+          <img src="images/pudim-tradicional.jpeg"
+               alt="Pudim Tradicional DolceDim"
+               loading="lazy" />
+        </div>
+        <div class="sabor-hero-info">
+          <p class="sabor-sub reveal">Sabor Clássico</p>
+          <h3 class="sabor-nome reveal">Pudim<br><em>Tradicional</em></h3>
+
+          <div class="lisinho-badge reveal">
+            ✦ Liso · Sem furinhos · Perfeito
+          </div>
+
+          <p class="sabor-desc reveal">
+            O clássico reimaginado. Calda de caramelo artesanal dourada,
+            textura de seda, sabor equilibrado entre o doce do leite condensado
+            e o aroma da baunilha. Irretocável. Exatamente como deve ser.
+          </p>
+
+          <div class="tamanhos-title reveal">Escolha o tamanho</div>
+          <div class="tamanhos-grid reveal">
+            <div class="tamanho-item">
+              <span class="tam-peso">120g</span>
+              <span class="tam-preco">Individual</span>
+            </div>
+            <div class="tamanho-item">
+              <span class="tam-peso">500g</span>
+              <span class="tam-preco">Médio</span>
+            </div>
+            <div class="tamanho-item">
+              <span class="tam-peso">1kg</span>
+              <span class="tam-preco">Família</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5515976004473?text=Olá!%20Quero%20pedir%20um%20Pudim%20Tradicional%20DolceDim%20🍮"
+             target="_blank" rel="noopener"
+             class="btn btn-dark reveal">
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PAINEL: CHOCOLATE BRANCO ─── -->
+    <div class="sabor-panel" id="sabor-chocbranco">
+      <div class="sabor-hero-card">
+        <div class="sabor-hero-img">
+          <img src="images/pudim-chocolate-branco.jpeg"
+               alt="Pudim Chocolate Branco com Frutas Vermelhas DolceDim"
+               loading="lazy" />
+        </div>
+        <div class="sabor-hero-info">
+          <p class="sabor-sub reveal">Exclusivo DolceDim</p>
+          <h3 class="sabor-nome reveal">Chocolate Branco<br><em>com Frutas Vermelhas</em></h3>
+
+          <div class="lisinho-badge reveal">
+            ✦ Liso · Sem furinhos · Perfeito
+          </div>
+
+          <p class="sabor-desc reveal">
+            Pudim sedoso de chocolate branco, com calda de frutas vermelhas
+            preparada artesanalmente — morango, amora e framboesa em equilíbrio
+            perfeito. A acidez da calda contrasta com a doçura suave do pudim.
+            Uma experiência sofisticada e inesquecível.
+          </p>
+
+          <div class="tamanhos-title reveal">Escolha o tamanho</div>
+          <div class="tamanhos-grid reveal">
+            <div class="tamanho-item">
+              <span class="tam-peso">120g</span>
+              <span class="tam-preco">Individual</span>
+            </div>
+            <div class="tamanho-item">
+              <span class="tam-peso">500g</span>
+              <span class="tam-preco">Médio</span>
+            </div>
+            <div class="tamanho-item">
+              <span class="tam-peso">1kg</span>
+              <span class="tam-preco">Família</span>
+            </div>
+          </div>
+          </div>
+
+          <a href="https://wa.me/5515976004473?text=Olá!%20Quero%20pedir%20um%20Pudim%20de%20Chocolate%20Branco%20com%20Frutas%20Vermelhas%20DolceDim%20🍓"
+             target="_blank" rel="noopener"
+             class="btn btn-dark reveal">
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+     <!-- ─── PAINEL: DOCE DE LEITE ─── -->
+    <div class="sabor-panel" id="sabor-docelite">
+      <div class="em-breve-card">
+        <p class="sabor-sub reveal" style="color:rgba(212,160,90,0.8);justify-content:center;display:flex;">Em breve</p>
+        <h3 class="sabor-nome reveal" style="margin-bottom:10px;">
+          Pudim de<br><em style="color:var(--caramelo-cl)">Doce de Leite</em>
+        </h3>
+        <p class="reveal">
+          Um pudim de doce de leite artesanal, com aquela cremosidade profunda
+          que abraça o paladar. A mesma textura impecável da DolceDim — lisinha,
+          sem furinhos — agora com o sabor mais aconchegante do Brasil.
+          Em breve disponível em todos os tamanhos.
+        </p>
+        <a href="https://wa.me/5515976004473?text=Olá!%20Quero%20ser%20avisada%20quando%20o%20Pudim%20de%20Doce%20de%20Leite%20estiver%20disponível%20🍮"
+           target="_blank" rel="noopener"
+           class="btn reveal"
+           style="display:inline-flex;background:var(--caramelo);color:var(--branco-quente);margin:0 auto;">
+          Me avise quando lançar
+        </a>
+      </div>
+    </div>
+
+    <!-- ─── PAINEL: GELADINHOS ─── -->
+    <div class="sabor-panel" id="sabor-geladinho">
+      <div class="em-breve-card">
+        <p class="sabor-sub reveal" style="color:rgba(212,160,90,0.8);justify-content:center;display:flex;">Em breve</p>
+        <h3 class="sabor-nome reveal" style="margin-bottom:10px;">
+          Geladinhos<br><em style="color:var(--caramelo-cl)">Sabor Pudim</em>
+        </h3>
+        <p class="reveal">
+          A cremosidade do pudim perfeito em versão gelada. Geladinhos com
+          sabor autêntico de pudim — bem cremosos, bem gelados, bem DolceDim.
+          Uma nova forma de se apaixonar pelo mesmo sabor que você já ama.
+          Em breve disponível para encomenda.
+        </p>
+        <a href="https://wa.me/5515976004473?text=Olá!%20Quero%20ser%20avisada%20quando%20os%20Geladinhos%20Sabor%20Pudim%20estiverem%20disponíveis%20🧊"
+           target="_blank" rel="noopener"
+           class="btn reveal"
+           style="display:inline-flex;background:var(--caramelo);color:var(--branco-quente);margin:0 auto;">
+          Me avise quando lançar
+        </a>
+      </div>
+    </div>
+
+    <!-- ─── PAINEL: CHOCOLATE BELGA ─── -->
+    <div class="sabor-panel" id="sabor-belgico">
+      <div class="em-breve-card">
+        <p class="sabor-sub reveal" style="color:rgba(212,160,90,0.8);justify-content:center;display:flex;">Em breve</p>
+        <h3 class="sabor-nome reveal" style="margin-bottom:10px;">
+          Pudim de<br><em style="color:var(--caramelo-cl)">Chocolate Belga</em>
+        </h3>
+        <p class="reveal">
+          Em desenvolvimento. Um pudim de chocolate belga 70% cacau,
+          com textura absolutamente perfeita, para quem busca o máximo
+          em sofisticação e intensidade. Em breve disponível em todos os tamanhos.
+        </p>
+        <a href="https://wa.me/5515976004473?text=Olá!%20Quero%20ser%20avisada%20quando%20o%20Pudim%20de%20Chocolate%20Belga%20estiver%20disponível%20🍫"
+           target="_blank" rel="noopener"
+           class="btn reveal"
+           style="display:inline-flex;background:var(--caramelo);color:var(--branco-quente);margin:0 auto;">
+          Me avise quando lançar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FERNANDA BRAGA
+  ═══════════════════════════════ -->
+   <section id="fernanda">
+    <div class="fernanda-img reveal-left">
+      <img src="images/fernanda-braga.jpeg"
+           alt="Fernanda Braga — Fundadora da DolceDim"
+           loading="lazy" />
+    </div>
+
+    <div class="fernanda-text">
+      <div class="sec-eyebrow reveal">A criadora</div>
+      <h2 class="sec-title reveal">
+        Fernanda<br><em>Braga</em>
+      </h2>
+      <p class="fernanda-cargo reveal">Professora &amp; Fundadora · DolceDim</p>
+
+      <p class="sec-desc reveal">
+        Fernanda Braga é professora — e como toda boa professora, ela não aceita
+        fazer nada pela metade. Antes de criar a DolceDim, atuou como empreendedora
+        no mercado digital, onde aprendeu que construir algo com significado exige
+        método, consistência e muita coragem.
+      </p>
+      <p class="sec-desc reveal" style="margin-top:14px;">
+        Foi nessa mesma escola que ela trouxe para a cozinha o rigor de quem
+        ensina: pesquisou, testou, errou e refinou até chegar numa receita que
+        entregasse o que sempre prometeu — um pudim verdadeiramente perfeito.
+        Sem furinhos. Sem bolhas. Sem desculpas.
+      </p>
+      <p class="sec-desc reveal" style="margin-top:14px;">
+        A DolceDim não é só um produto. É a prova de que recomeçar com
+        propósito — trocando o digital pelo artesanal, a tela pela forma —
+        pode gerar algo único. Cada pudim que sai das mãos de Fernanda
+        carrega a mesma dedicação que ela coloca em tudo: a de quem
+        quer, de verdade, fazer a diferença.
+      </p>
+
+      <p class="fernanda-assinatura reveal">Fernanda Braga</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       GALERIA
+  ═══════════════════════════════ -->
+  <section id="galeria">
+    <div class="galeria-header">
+      <div class="sec-eyebrow reveal">Galeria</div>
+      <h2 class="sec-title reveal">
+        Cada detalhe<br><em>conta.</em>
+      </h2>
+    </div>
+
+    <div class="gallery-mosaic">
+      <!-- Célula 1 — ocupa 2 colunas -->
+      <div class="gal-cell reveal">
+        <img src="images/pudim-calda.jpeg"
+             alt="Pudim DolceDim sendo regado com calda"
+             loading="lazy" />
+        <span class="gal-caption">A calda dourada</span>
+      </div>
+      <!-- Célula 2 -->
+      <div class="gal-cell reveal">
+        <img src="images/pudim-tradicional.jpeg"
+             alt="Pudim Tradicional DolceDim"
+             loading="lazy" />
+        <span class="gal-caption">Pudim Tradicional</span>
+      </div>
+      <!-- Célula 3 -->
+      <div class="gal-cell reveal">
+        <img src="images/pudim-chocolate-branco.jpeg"
+             alt="Pudim Chocolate Branco"
+             loading="lazy" />
+        <span class="gal-caption">Choc. Branco + Frutas</span>
+      </div>
+      <!-- Célula 4 — ocupa 2 colunas -->
+      <div class="gal-cell reveal">
+        <img src="images/fernanda-braga.jpeg"
+             alt="Fernanda Braga com os pudins"
+             loading="lazy" />
+        <span class="gal-caption">Fernanda e seus pudins</span>
+      </div>
+      <!-- Célula 5 -->
+      <div class="gal-cell reveal">
+        <img src="images/embalagem.jpeg"
+             alt="Embalagem DolceDim"
+             loading="lazy" />
+        <span class="gal-caption">Embalagem afetiva</span>
+      </div>
+      <!-- Célula 6 -->
+      <div class="gal-cell reveal">
+        <img src="images/logo-gold.jpeg"
+             alt="DolceDim — O Pudim Perfeito Existe"
+             loading="lazy" />
+        <span class="gal-caption">A essência da DolceDim</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       DEPOIMENTOS
+  ═══════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="sec-eyebrow reveal">Depoimentos</div>
+    <h2 class="sec-title reveal" style="margin-bottom:4px;">
+      Quem provou,<br><em>voltou.</em>
+    </h2>
+
+    <div class="dep-grid">
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-texto">
+          "Nunca tinha visto um pudim tão lindo e tão gostoso. A superfície é
+          perfeita — lisinha, brilhante. E o sabor então... parece que dissolve
+          na boca. A DolceDim mudou meu conceito de pudim."
+        </p>
+        <div class="dep-autor">
+          <div class="dep-avatar">A</div>
+          <div>
+            <div class="dep-nome">Ana Claudia M.</div>
+            <div class="dep-fonte">WhatsApp · cliente fiel</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-texto">
+          "Pedi o de chocolate branco com frutas vermelhas para um jantar especial.
+          Todo mundo parou para olhar antes de comer — lindo demais. E o sabor
+          é sofisticado, equilibrado. Me pediram o contato da Fernanda na hora."
+        </p>
+        <div class="dep-autor">
+          <div class="dep-avatar">P</div>
+          <div>
+            <div class="dep-nome">Patricia S.</div>
+            <div class="dep-fonte">Instagram · @patriciasoaresz</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal">
+        <div class="dep-stars">★★★★★</div>
+        <p class="dep-texto">
+          "Comprei o de 1kg para o aniversário da minha mãe. Ela que sempre criticava
+          os furinhos dos pudins ficou completamente impressionada. Foi o doce mais
+          elogiado da festa. Já encomendei o próximo."
+        </p>
+        <div class="dep-autor">
+          <div class="dep-avatar">R</div>
+          <div>
+            <div class="dep-nome">Rodrigo C.</div>
+            <div class="dep-fonte">Google Reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       CONTATO
+  ═══════════════════════════════ -->
+  <section id="contato">
+    <!-- Texto -->
+    <div class="contato-text">
+      <div class="sec-eyebrow reveal">Pedidos</div>
+      <h2 class="sec-title reveal">
+        Pronto para<br>provar a <em>perfeição?</em>
+      </h2>
+      <p class="sec-desc reveal" style="margin-top:16px;margin-bottom:40px;">
+        Faça seu pedido pelo WhatsApp com antecedência —
+        cada pudim é preparado individualmente, com o cuidado que você merece.
+      </p>
+
+      <div class="contato-items">
+        <div class="contato-item reveal">
+          <div class="contato-icon">📱</div>
+          <div>
+            <div class="contato-label">WhatsApp</div>
+            <div class="contato-valor">
+              <a href="https://wa.me/5515976004473" target="_blank">(15) 97600-4473</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">📍</div>
+          <div>
+            <div class="contato-label">Localização</div>
+            <div class="contato-valor">Sorocaba — SP</div>
+          </div>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">🕐</div>
+          <div>
+            <div class="contato-label">Encomendas</div>
+            <div class="contato-valor">Com 24h de antecedência</div>
+          </div>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">🚗</div>
+          <div>
+            <div class="contato-label">Entrega</div>
+            <div class="contato-valor">Delivery e retirada — consulte disponibilidade</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5515976004473?text=Olá%20Fernanda!%20Quero%20fazer%20um%20pedido%20DolceDim%20🍮"
+         target="_blank" rel="noopener"
+         class="btn btn-gold reveal" style="margin-top:36px;display:inline-flex;">
+        Fazer Pedido Agora
+      </a>
+    </div>
+
+    <!-- Visual -->
+    <div class="contato-visual reveal-right">
+      <div class="contato-img">
+        <img src="images/pudim-tradicional.jpeg"
+             alt="Pudim DolceDim"
+             loading="lazy" />
+      </div>
+      <div class="contato-quote">
+        <p>"O pudim perfeito existe. E tem um endereço."</p>
+        <small>— DolceDim, por Fernanda Braga</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ═══════════════════════════════ -->
+  <footer>
+    <div class="footer-top">
+      <!-- Marca -->
+      <div class="footer-brand">
+        <div class="brand-name">DolceDim</div>
+        <div class="brand-tag">O Pudim Perfeito Existe</div>
+        <p>
+          Pudins artesanais de textura impecável — lisinhos, sem furinhos,
+          preparados com obsessão pela perfeição. Por Fernanda Braga, Sorocaba — SP.
+        </p>
+        <div class="footer-socials">
+          <a class="footer-social"
+             href="https://instagram.com/dolcedim"
+             target="_blank" rel="noopener"
+             aria-label="Instagram">📷</a>
+          <a class="footer-social"
+             href="https://wa.me/5515976004473"
+             target="_blank" rel="noopener"
+             aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#sobre"      >A Marca</a></li>
+          <li><a href="#cardapio"   >Cardápio</a></li>
+          <li><a href="#fernanda"   >Fernanda Braga</a></li>
+          <li><a href="#galeria"    >Galeria</a></li>
+          <li><a href="#depoimentos">Reviews</a></li>
+          <li><a href="#contato"    >Contato &amp; Pedidos</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <p>
+          <a href="https://wa.me/5515976004473">(15) 97600-4473</a><br>
+          Sorocaba — SP<br><br>
+          Encomendas com 08h de antecedência.<br>
+          Delivery e retirada disponíveis.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 DolceDim — Todos os direitos reservados. Fernanda Braga.</p>
+      <p>Site por <a href="#" target="_blank">Eduardo Braga - Dev Full-stack</a></p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
