@@ -150,7 +150,7 @@ e animações sutis que não distraem, mas encantam.
 
 ## 👨‍💻 Desenvolvedor
 
-Feito com ☕ por **[Seu Nome]**
+Feito com ☕ por **[Eduardo Braga]**
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/euoeduardobraga)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BragaDudu)
